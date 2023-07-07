@@ -34,4 +34,18 @@ class ZahlenParserTest{
 
         assertEquals(expectedOut, actualOut);
     }
+
+    @Test
+    void parseNumberThree(){
+        testee = new ZahlenParser();
+        int expectedOut = 2;
+        NummerZeichen input = new NummerZeichen(
+                new char[]{BLANK,UNDERLINE, BLANK},
+                new char[]{BLANK,UNDERLINE, PIPE},
+                new char[]{PIPE,UNDERLINE, BLANK});
+
+        int actualOut = testee.parseZeichen(input);
+
+        assertEquals(expectedOut, actualOut);
+    }
 }
