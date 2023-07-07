@@ -3,9 +3,9 @@ package ch.css.produkt.kata.bankocr;
 import java.util.Arrays;
 
 public class NummerZeichen {
-    private char[] zeile1;
-    private char[] zeile2;
-    private char[] zeile3;
+    private final char[] zeile1;
+    private final char[] zeile2;
+    private final char[] zeile3;
 
     public NummerZeichen(char[] zeile1, char[] zeile2, char[] zeile3) {
         this.zeile1 = zeile1;
