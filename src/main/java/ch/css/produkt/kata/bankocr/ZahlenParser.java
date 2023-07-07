@@ -62,7 +62,6 @@ public class ZahlenParser {
     );
 
     public int parseZeichen(NummerZeichen input) {
-        return zeichenMap.get(input).intValue();
-
+        return zeichenMap.get(input);
     }
 }
