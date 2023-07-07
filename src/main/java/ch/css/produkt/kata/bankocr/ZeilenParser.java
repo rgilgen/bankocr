@@ -8,8 +8,10 @@ public class ZeilenParser {
         List<NummerZeichen> list = new ArrayList<>();
         int anzahlZahlenProZeile = 9;
 
-        for (int zahlenIndex = 0; zahlenIndex < anzahlZahlenProZeile; zahlenIndex++) {
-            list.add(ermittleZahlenFelder(zahlenIndex, input));
+        for (int zeilenIndex = 0; zeilenIndex < input.size(); zeilenIndex = zeilenIndex+4) {
+            for (int zahlenIndex = 0; zahlenIndex < anzahlZahlenProZeile; zahlenIndex++) {
+                list.add(ermittleZahlenFelder(zahlenIndex, input.subList(zeilenIndex, zeilenIndex+4)));
+            }
         }
 
         return list;
