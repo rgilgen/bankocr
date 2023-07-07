@@ -1,12 +1,29 @@
 package ch.css.produkt.kata.bankocr;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
-
-import static ch.css.produkt.kata.bankocr.ZahlenParser.*;
 
 public class ZeilenParser {
     public List<NummerZeichen> splitZeilenIntoNummern(List<String> input) {
-        return Arrays.asList(NUMBER_ONE, NUMBER_TWO,NUMBER_THREE, NUMBER_FOUR, NUMBER_FIFE, NUMBER_SIX, NUMBER_SEVEN, NUMBER_EIGHT, NUMBER_NINE);
+        List<NummerZeichen> list = new ArrayList<>();
+        int anzahlZahlenProZeile = 9;
+
+        for (int zahlenIndex = 0; zahlenIndex < anzahlZahlenProZeile; zahlenIndex++) {
+            list.add(ermittleZahlenFelder(zahlenIndex, input));
+        }
+
+        return list;
+    }
+
+    private NummerZeichen ermittleZahlenFelder(int index, List<String> input) {
+
+        int zeichenBreite = 3;
+        int zeichenStart = index*zeichenBreite;
+        int zeichenEnde = zeichenStart+zeichenBreite;
+        NummerZeichen zeichen = new NummerZeichen(
+                input.get(0).substring(zeichenStart, zeichenEnde).toCharArray(),
+                input.get(1).substring(zeichenStart, zeichenEnde).toCharArray(),
+                input.get(2).substring(zeichenStart, zeichenEnde).toCharArray());
+        return zeichen;
     }
 }
