@@ -7,43 +7,43 @@ public class ZahlenParser {
     public static final char UNDERLINE = '_';
     public static final char PIPE = '|';
 
-    private static final NummerZeichen NUMBER_ONE = new NummerZeichen(
+    public static final NummerZeichen NUMBER_ONE = new NummerZeichen(
             new char[]{BLANK, BLANK, BLANK},
             new char[]{BLANK, BLANK, PIPE},
             new char[]{BLANK, BLANK, PIPE});
-    private static final NummerZeichen NUMBER_TWO = new NummerZeichen(
+    public static final NummerZeichen NUMBER_TWO = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{BLANK, UNDERLINE, PIPE},
             new char[]{PIPE, UNDERLINE, BLANK});
-    private static final NummerZeichen NUMBER_THREE = new NummerZeichen(
+    public static final NummerZeichen NUMBER_THREE = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{BLANK, UNDERLINE, PIPE},
             new char[]{BLANK, UNDERLINE, PIPE});
-    private static final NummerZeichen NUMBER_FOUR = new NummerZeichen(
+    public static final NummerZeichen NUMBER_FOUR = new NummerZeichen(
             new char[]{BLANK, BLANK, BLANK},
             new char[]{PIPE, UNDERLINE, PIPE},
             new char[]{BLANK, BLANK, PIPE});
-    private static final NummerZeichen NUMBER_FIFE = new NummerZeichen(
+    public static final NummerZeichen NUMBER_FIFE = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{PIPE, UNDERLINE, BLANK},
             new char[]{BLANK, UNDERLINE, PIPE});
-    private static final NummerZeichen NUMBER_SIX = new NummerZeichen(
+    public static final NummerZeichen NUMBER_SIX = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{PIPE, UNDERLINE, BLANK},
             new char[]{PIPE, UNDERLINE, PIPE});
-    private static final NummerZeichen NUMBER_SEVEN = new NummerZeichen(
+    public static final NummerZeichen NUMBER_SEVEN = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{BLANK, BLANK, PIPE},
             new char[]{BLANK, BLANK, PIPE});
-    private static final NummerZeichen NUMBER_EIGHT = new NummerZeichen(
+    public static final NummerZeichen NUMBER_EIGHT = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{PIPE, UNDERLINE, PIPE},
             new char[]{PIPE, UNDERLINE, PIPE});
-    private static final NummerZeichen NUMBER_NINE = new NummerZeichen(
+    public static final NummerZeichen NUMBER_NINE = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{PIPE, UNDERLINE, PIPE},
             new char[]{BLANK, UNDERLINE, PIPE});
-    private static final NummerZeichen NUMBER_ZERO = new NummerZeichen(
+    public static final NummerZeichen NUMBER_ZERO = new NummerZeichen(
             new char[]{BLANK, UNDERLINE, BLANK},
             new char[]{PIPE, BLANK, PIPE},
             new char[]{PIPE, UNDERLINE, PIPE});
